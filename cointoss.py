@@ -12,8 +12,7 @@ import random
 
 def coin_flip(trials, my_data):
     '''randomizes 0 and 1 'trials' times'''
-    for i in range(0, trials):
-        my_data += [random.randint(0, 1)]
+    my_data += [random.randint(0, 1) for i in range(0, trials)]
     return my_data
 
 def get_vals(my_data, my_dict):
