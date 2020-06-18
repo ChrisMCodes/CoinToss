@@ -37,7 +37,7 @@ def show_results(my_data, my_dict):
     else:
         variance = tails - 50
 
-    # print("Heads: {:.3f}%, tails: {:.3f}% in a trial of {}.".format(heads, tails, trials)) # This can be commented out if you don't want it
+    # print("Heads: {:.3f}%, tails: {:.3f}%  for a total variance from 50% of {:.3f}% in a trial of {}.".format(heads, tails, variance, trials)) # This can be commented out if you don't want it
     
     return variance
 
@@ -61,7 +61,7 @@ def test_it(num):
 
     # prints how far the results of this round varied from an even 50/50 split.
     # for example, if you flipped 9 heads and 1 tail, that's a 90% max variance.
-    print("In 10 trials of {} flips each, the max variance from a 50/50 split was: {:.4f}%.".format(num, max_variance))
+    print("In 10 trials of {} flips each, the max variance from a 50/50 split was: {:.3f}%.".format(num, max_variance))
     pass
 
 # calling my test_it function with multiples of 10 flips
